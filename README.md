@@ -1,4 +1,4 @@
-![Screenshot (29)](https://github.com/Ahmedd02/Cars-DealerShip/assets/107642361/503f2810-3a97-476a-89cc-43f3f69b6817)# Cars-DealerShip
+# Cars-DealerShip
 THIS IS A FRONT-END PROJECT : A cars website designed by html and css in order to view cars and be able to purchase the animations used were mainly for a front-end buttons manipulation
 
 # Features
@@ -25,6 +25,8 @@ THIS IS A FRONT-END PROJECT : A cars website designed by html and css in order t
 ![Screenshot (30)](https://github.com/Ahmedd02/Cars-DealerShip/assets/107642361/6ddff3ee-f4bd-4137-8194-676a83dc6808)
 
 ![Screenshot (32)](https://github.com/Ahmedd02/Cars-DealerShip/assets/107642361/ab8cb62f-edb9-4157-8bef-8a8222f9540a)
+
+![Screenshot (29)](https://github.com/Ahmedd02/Cars-DealerShip/assets/107642361/503f2810-3a97-476a-89cc-43f3f69b6817)
 
 
 
