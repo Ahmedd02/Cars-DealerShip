@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>McLaren P1</title>
+          
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+        <div class="banner">
+          <div class="navbar">
+              <a href="Homepage.html">
+              <img src="logo.png" class="logo">
+              </a>
+              <ul>
+                <li><a href="Homepage.html">Homepage</a></li>
+                 <li><a href="Shop.html">Shop</i></a></li>
+                <li><a href="Account.html">Account</a></li>
+             </ul>  
+        </div>
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+        <img src ="mclaren.jpg" id="main"><br>
+        <b>Color:</b>
+        <button style="background-color: orange;" onclick="document.getElementById('main').src='mclaren.jpg'">McLaren Orange</button>
+        <button style="background-color: white; color:black;" onclick="document.getElementById('main').src='mclaren2.jpg'"> Pearl White</button>
+        <button style="background-color: black;" onclick="document.getElementById('main').src='mclaren3.jpg'">Mclaren Argon</button>
+        <button style="background-color: rgb(1, 209, 1);" onclick="document.getElementById('main').src='mclaren4.jpg'">Mantis Green</button>
+            </div>
+          </div>
+        </div>
+        <div class = 'product-content'>
+          <h2 class = 'product-title'>McLaren P1</h2>
+          
+          <div class = 'product-price'>
+            <p class = 'new-price'> Price: <span>$ 15,000,000</span></p>
+          </div>
+
+          <div class = 'product-detail'>
+            <h2>About the P1: </h2>
+            <p id="main" onmouseover="into(this)" onmouseout="out(this)" >Beautiful to look at and exhilaratingly quick, the record slaying McLaren F1 changed super car history. A technological
+               masterpiece, it was the world's first carbon fibre road car, the world's fastest production car and is still the
+                fastest naturally aspirated road car ever built.</p>
+                <script>
+                  function into(obj) {
+                       obj.innerHTML = "The carbon fibre bodywork is draped over a monocoque chassis, with a fighter-jet inspired teardrop cockpit sloping up out of the bonnet to funnel air across the rear wing, helping create a distinctly mid-engined silhouette that reveals how tightly-packaged and honed the car is."
+                       obj.style.color="white"
+                  }
+                  function out(obj) {
+                    obj.innerHTML = "Beautiful to look at and exhilaratingly quick, the record slaying McLaren F1 changed super car history. A technological masterpiece, it was the world's first carbon fibre road car, the world's fastest production car and is still the fastest naturally aspirated road car ever built."
+                    obj.style.color="Black"
+                  }
+                </script>
+            <ul>
+                <form>
+              <li>Engine: <span  id="info" onclick="info()">V8, 3.8L</span></li>
+              <script>
+                function info(){
+                  document.getElementById("info").innerHTML="A twin-turbo 3.8-litre V8 – the same as used across the McLaren range, but tweaked to output 727hp and 531lb ft of torque – combined with a lightweight and KERS-fed electric motor, that puts a further 176hp and 192lb ft at the driver’s disposal. That power reaches the rear wheels via seven-speed twin clutch gearbox.";
+                  document.getElementById("info").style.color="purple";
+                }
+              </script>
+              <li>Transmission: <span>7-speed dual-clutchl</span></li>
+              <li>Car Type: <span>Hybrid sports car</span></li>
+              <li>Passengers: <span>2</span></li>
+              <li>Top Speed: <span onclick="this.innerHTML='215 MPH'">345 km/h</span></li>
+            </ul>
+          </div>
+          <div class = 'purchase-info'>
+            <a href="Payment.html"><button type = 'button' class = 'btn'>
+              Buy Now
+                </button></a>
+          </div>
+                </form>
+        </div>
+      </div>
+    </div>
+      </div>
+  </body>
+</html>

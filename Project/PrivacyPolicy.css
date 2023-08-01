@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Spartan";
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+.banner{
+    width: 100%;
+    height: 100vh;   
+    background-image:url(Background1.jpg);
+    background-size: cover;
+    background-position: center;  
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.navbar{
+    list-style: none;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+.navbar ul li{ 
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: black;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; 
+    font-size: 18px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #b8860b;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 1s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.dropdown
+{
+    display: none;
+}
+.navbar ul li:hover .dropdown
+{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.dropdown ul
+{
+    width: 250px;
+    display: block;
+    margin: 10px;
+    background-color: black;
+}
+.dropdown ul li
+{
+    margin: 10px;
+}
+.dropdown ul li:hover
+{
+    width: 150px;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: white;
+    width: 350px;
+    height: 40px;
+    display: flex;
+    border-radius: 50px;
+}
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+form #b{
+    flex:0.5;
+    background: #b8860b;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 0px 50px 50px 0px;
+}  
+form .fa-search{
+    align-self: center;
+    padding: 10px 20px;
+    color: #777;}
+.inner-container{
+    width: 100%;
+    background-color: #fbfcf8;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+.footer{
+    background-color: #000;
+    padding: 70px 0;
+}
+.container1{
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 45px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-family: serif;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #b8860b;
+    height: 2px;
+    box-sizing: border-box;
+    width: 80px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #b8860b;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #fff;
+    background-color: #b8860b;
+}

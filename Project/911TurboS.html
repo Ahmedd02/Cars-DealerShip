@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Porsche 911 Turbo S</title>
+          
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+        <div class="banner">
+          <div class="navbar">
+              <a href="Homepage.html">
+              <img src="logo.png" class="logo">
+              </a>
+              <ul>
+                <li><a href="Homepage.html">Homepage</a></li>
+                 <li><a href="Shop.html">Shop</i></a></li>
+                <li><a href="Account.html">Account</a></li>
+             </ul>  
+        </div>
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+        <img src ="porsche.jpg" id="main"><br>
+        <b>Color:</b>
+        <button style="background-color: blue;" onclick="document.getElementById('main').src='porsche.jpg'">Gentian Blue</button>
+        <button style="background-color: black; " onclick="document.getElementById('main').src='porsche2.jpg'">Jet Black</button>
+        <button style="background-color: #222b13;" onclick="document.getElementById('main').src='porsche3.jpg'">Aventurine Green</button>
+        <button style="background-color: white; color:black;" onclick="document.getElementById('main').src='porsche4.jpg'">Carrara White</button>
+            </div>
+          </div>
+        </div>
+        <div class = 'product-content'>
+          <h2 class = 'product-title'>Porsche 911 Turbo S</h2>
+          
+          <div class = 'product-price'>
+            <p class = 'new-price'> Price: <span>$ 197,100</span></p>
+          </div>
+
+          <div class = 'product-detail'>
+            <h2>About the 911 Turbo S: </h2>
+            <p>The Porsche 911 Turbo S is motoring perfection. It offers everything a driver could ever want from a sports car. 
+              It delivers power and speed to entertain even the most hardened performance car fan. Moving beyond a 911 just 
+              dilutes the driving experience for the worst.</p>
+            <ul>
+                <form>
+              <li>Engine: <span>3.7-liter twin-turbocharged flat-six engine</span></li>
+              <li>Transmission: <span>eight-speed dual-clutch automatic transmission</span></li>
+              <li>Car Type: <span id="sport" onclick="change()">Sports Car</span></li>
+              <script>
+                function change(){
+                  document.getElementById("sport").innerHTML="🏎🏎🏎";
+                  document.getElementById("sport").style.fontSize= "30px";
+                }
+              </script>
+              <li>Passengers: <span>2-4</span></li>
+              <li>Top Speed: <span onclick="this.innerHTML='205 MPH'">330 km/h</span></li>
+            </ul>
+          </div>
+          <div class = 'purchase-info'>
+            <a href="Payment.html"><button type = 'button' class = 'btn'>
+              Buy Now
+                </button></a>
+          </div>
+                </form>
+        </div>
+      </div>
+    </div>
+      </div>
+  </body>
+</html>

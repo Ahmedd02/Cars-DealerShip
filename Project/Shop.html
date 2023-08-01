@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="Shop.css">
+  </head>
+  <body>
+      <section>
+    <div class="banner">
+          <div class="navbar">
+              <a href="Homepage.html">
+              <img src="logo.png" class="logo">
+              </a>
+              <ul>
+                  <li><a href="Homepage.html">Homepage</a></li>
+                   <li><a href="Shop.html">Shop</i></a></li>
+                  <li><a href="Account.html">Account</a></li>
+               </ul> 
+        </div>
+    
+    <div class="slider">
+        <input type="radio" name="slide" id="slide-1" checked>
+        <input type="radio" name="slide" id="slide-2">
+        <input type="radio" name="slide" id="slide-3">
+
+        <div class="slides">
+            <div class="slide slide-1">
+                <div class="slide-data">
+                    <h1>Cars like never before</h1>
+                    <P>Explore a wider range of Electric, Luxury and Sports cars that provide a far more superior driving experience and offer a challenge to even the most discriminating drivers. Definitely not 'just another car', there's a huge difference between driving one of our cars compared to the performance of other vehicles.</P>
+                    <a href="#Car"><button>EXPLORE</button></a>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="slide-data">
+                  <h1>Unique Accessories</h1>
+                    <P>These are the accessories that you need to help you keep your vehicle running in top notch condition and to keep it looking good. These include tires, engine, interior and exterior accessories, body of the vehicle and other mechanical parts needed to help your vehicle run well.</P>
+                    <a href="#ACC"><button>EXPLORE</button></a>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="slide-data">
+                  <h1>Top-Notch Spare Parts</h1>
+                    <P>We are pride in maintaining efficiency, integrity, and transparency as well as building a management team which has contributed to establishing our reputation as one of the automotive leaders in Egypt. Our credibility and trust was built through communicating clear and truthful information to our partners in business, principals, customers, and definitely to our team.</P>
+                    <a href="#SP"><button>EXPLORE</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows arrow-left">
+            <label for="slide-3">
+                <span class="slid"><i class="fas fa-angle-left"></i></span>
+            </label>
+            <label for="slide-1">
+                <span class="slid"><i class="fas fa-angle-left"></i></span>
+            </label>
+            <label for="slide-2">
+                <span class="slid"><i class="fas fa-angle-left"></i></span>
+            </label>
+        </div>
+
+        <div class="arrows arrow-right">
+            <label for="slide-2">
+                <span class="slid"><i class="fas fa-angle-right"></i></span>
+            </label>
+            <label for="slide-3">
+                <span class="slid"><i class="fas fa-angle-right"></i></span>
+            </label>
+            <label for="slide-1">
+                <span class="slid"><i class="fas fa-angle-right"></i></span>
+            </label>
+        </div>
+
+        <div class="dots">
+            <label for="slide-1"></label>
+            <label for="slide-2"></label>
+            <label for="slide-3"></label>
+        </div>
+    </div>
+        </div>
+      </section>
+      <section class="banner" id="Car">
+    <!--image card layout start-->
+    <div class="container">
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        <a href="LaFerrari.html"> 
+          <div class="image">
+          <img src="fer.jpg" alt="A red Ferrari la Ferrari" width='500px' height='300px'>
+          <div class="details" onmouseover="ferin(this)" onmouseout="ferout(this)"  >
+            <h2>Ferrari <span>LaFerrari</span></h2></div>
+            <script>
+              function ferin(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "The LaFerrari is Ferrari’s first ever production car to be equipped with the F1-derived hybrid solution."
+              }
+              function ferout(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "FERRARI LAFERRARI"
+                                  }           
+           </script>
+            <div class="more">
+              <a href="LaFerrari.html" class="read-more">Read <span>More</span></a>
+            </div>
+          </a>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <a href="AventadorSVJ.html">
+        <div class="image">
+          <img src="lambo.jpg" alt="A white porsche turbo s" width='380px' height='300px'>
+          <div class="details" onmouseover="lamboin(this)" onmouseout="lamboout(this)">
+            <h2>Lamborghini <span>Aventador SVJ</span></h2></div>
+            <script>
+              function lamboin(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "It is one of the rarest Lamborghinis in existence."
+                                  }
+              function lamboout(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "LAMBORGHINI AVENTADOR SVJ"
+                                  }                    
+           </script>
+            <div class="more">
+              <a href="AventadorSVJ.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <a href="ChironSport.html">
+        <div class="image">
+          <img src="bugatti.jpg" alt="A black bugatti chiron drifting" width='500px' height='300px'>
+          <div class="details" onmouseover="chironin(this)" onmouseout="chironout(this)">
+            <h2>Bugatti <span>Chiron Super Sport</span></h2></div>
+            <script>
+              function chironin(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "Combine the Chiron's power with its extreme aerodynamics and you have the recipe for a true hypercar."
+                                  }
+              function chironout(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "BUGATTI CHIRON SUPER SPORT"
+                                  } 
+           </script>
+            <div class="more">
+              <a href="ChironSport.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+      </div>
+      <!--image row end-->
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        <a href="911TurboS.html">
+        <div class="image">
+          <img src="porsche.jpg" alt="A blue Porsche 911 turbo S" width='400px' height='300px'>
+          <div class="details" onmouseover="turboin(this)" onmouseout="turboout(this)">
+            <h2>Porsche <span>911 Turbo S</span></h2></div>
+            <script>
+              function turboin(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "The popularity of the 911 spawned an industry of unparalleled mechanical and aesthetic improvements."
+                                  }
+              function turboout(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "PORSCHE 911 TURBO S"
+                                  }
+           </script>
+            <p></p>
+            <div class="more">
+              <a href="911TurboS.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <a href="Zonda.html">
+        <div class="image">
+          <img src="pagani.jpg" alt="A purple pagani zonda" width='400px' height='300px'>
+          <div class="details" onmouseover="zondain(this)" onmouseout="zondaout(this)">
+            <h2>Pagani <span>Zonda</span></h2></div>
+            <script>
+              function zondain(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "Incredible Performance, Power And Spectacular Design. The Pagani Zonda HP Barchetta is a monster on the road."
+                                  }
+              function zondaout(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "PAGANI ZONDA"
+                                  }
+           </script>
+            <div class="more">
+              <a href="Zonda.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <a href="P1.html">
+        <div class="image">
+          <img src="mclaren.jpg" alt="an orange mclaren p1" width='380px' height='300px'>
+          <div class="details" onmouseover="p1in(this)" onmouseout="p1out(this)">
+            <h2>McLaren <span>P1</span></h2></div>
+            <script>
+              function p1in(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "The McLaren P1™ follows in the footsteps of the iconic McLaren F1, the car that pushed boundaries further than any of its rivals."
+                                  }
+              function p1out(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "MCLAREN P1"
+                                  }
+           </script>
+            <div class="more">
+              <a href="P1.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+      </div>
+      <!--image row end-->
+    </div>
+    <!--image card layout end-->
+      </section>
+    <section class="video">
+        <div class="vid">
+        <video autoplay loop muted>
+        <source src="chiron.mp4" type="video/webm"></video>
+        </div>
+    </section>
+      <section class="banner" id="ACC">
+     <!--image card layout start-->
+    <div class="container">
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        <a href="PirelliTyres.html">
+        <div class="image">
+          <img src="Pirelli.jpg" alt="Pirelli car tires" width='500px' height='300px'>
+          <div class="details" onmouseover="pirelliIn(this)" onmouseout="pirelliOut(this)">
+            <h2>Pirelli <span> Tyres </span></h2></div>
+            <script>
+                function pirelliIn(obj) {
+                  obj.style.textAlign = "center";
+                  obj.style.fontSize = '20px';
+                  obj.style.fontWeight = "600";
+                  obj.style.marginTop = "35px";
+                  obj.innerHTML = "One of the main advantages of Pirelli car tyres is that they make the perfect tyres for when the temperature drops to 7°C and lower."
+                                  }
+                function pirelliOut(obj) {
+                  obj.style.textAlign = "center";
+                  obj.style.fontSize = '35px';
+                  obj.style.fontWeight = "600";;
+                  obj.style.marginTop = "70px";
+                  obj.innerHTML = "PIRELLI TYRES"
+                                  }
+            </script>
+            <div class="more">
+              <a href="PirelliTyres.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <a href="CarCover.html">
+        <div class="image">
+          <img src="cover.jpg" alt="A red car cover" width='500px' height='300px'>
+          <div class="details"  onmouseover="coverin(this)" onmouseout="coverout(this)">
+            <h2>Car <span>Cover</span></h2></div>
+            <script>
+              function coverin(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "A car cover will keep your paint from fading and scratching, your interior from discoloring and cracking, and vinyl and convertible tops from disintegrating."
+                                }
+              function coverout(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "CAR COVER"
+                                  }
+          </script>
+            <div class="more">
+              <a href="CarCover.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+      </div>
+      <!--image row end-->
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        <a href="WallConnector.html">
+        <div class="image">
+          <img src="wallconnector.jpg" alt="A wall connector" width='500px' height='300px'>
+          <div class="details" onmouseover="connectorIn(this)" onmouseout="connectorOut(this)">
+            <h2>Wall <span>Connector</span></h2></div>
+            <script>
+              function connectorIn(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "Wall Connector can adapt to most home electrical systems, with customizable power levels on a range of circuit breakers."
+                                  }
+              function connectorOut(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "WALL CONNECTOR"
+                                  }
+          </script>
+            <div class="more">
+              <a href="WallConnector.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <a href="F1Lego.html">
+        <div class="image">
+          <img src="ttt.png" alt="A formula 1 lego car" width='450px' height='300px'>
+          <div class="details" onmouseover="legoIn(this)" onmouseout="legoOut(this)">
+            <h2>Ferrari F1-<span>75 Lego Set</span></h2></div>
+            <script>
+              function legoIn(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "If you're a fan of LEGO cars or Formula One, this set is an absolute must-have!."
+                                }
+              function legoOut(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "FERRARI F1-75 LEGO SET"
+                                  }
+          </script>
+            <div class="more">
+              <a href="F1Lego.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+
+      </div>
+      <!--image row end-->
+    </div>
+    <!--image card layout end-->
+      </section>
+      <section class="video">
+        <div class="vid">
+        <video autoplay loop muted>
+        <source src="try.webm" type="video/mp4"></video>
+        </div>
+    </section>
+      <section class="banner" id="SP">
+     <!--image card layout start-->
+    <div class="container">
+      <!--image row start-->
+      <div class="row">
+        <!--image card start-->
+        <a href="Spoiler.html">
+        <div class="image">
+          <img src="kspoiler.jpg" alt="" width='500px' height='300px'>
+          <div class="details" onmouseover="spoilerin(this)" onmouseout="spoilerout(this)">
+            <h2>koenigsegg <span>Spoiler</span></h2></div>
+            <script>
+              function spoilerin(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "The spoiler raises the downward force on the back of the car increasing both traction and braking ability."
+                                }
+              function spoilerout(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "KOENIGSEGG SPOILER"
+                                  }
+          </script>
+            <div class="more">
+              <a href="Spoiler.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <a href="Headlights.html">
+        <div class="image">
+          <img src="HL.jpg" alt="" width='500px' height='300px'>
+          <div class="details" onmouseover="HLIN(this)" onmouseout="HLOUT(this)">
+            <h2>Porsche <span><br>Headlights</span></h2></div>
+            <script>
+              function HLIN(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '20px';
+                obj.style.fontWeight = "600";
+                obj.style.marginTop = "35px";
+                obj.innerHTML = "Bright, clear headlights will give you the advantage of an extra second or two of response time to better react to an unexpected obstacle such as a pothole, deer or debris in the road."
+                                }
+              function HLOUT(obj) {
+                obj.style.textAlign = "center";
+                obj.style.fontSize = '35px';
+                obj.style.fontWeight = "600";;
+                obj.style.marginTop = "70px";
+                obj.innerHTML = "PORSCHE HEADLIGHTS"
+                                  }
+          </script>
+            <div class="more">
+              <a href="Headlights.html" class="read-more">Read <span>More</span></a>
+          </div>
+        </a>
+        </div>
+        <!--image card end-->
+
+    </div>
+    <!--image card layout end-->
+      </section>
+
+      <footer class="footer">
+        <div class="container1">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                <li><a href="About.html">About us</a></li>
+                <li><a href="Services.html">Our Services</a></li>
+                <li><a href="PrivacyPolicy.html">Privacy policy</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="orderstat.html">Order Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>

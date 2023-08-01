@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Car Cover</title>
+          
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+        <div class="banner">
+          <div class="navbar">
+              <a href="Homepage.html">
+              <img src="logo.png" class="logo">
+              </a>
+              <ul>
+                <li><a href="Homepage.html">Homepage</a></li>
+                 <li><a href="Shop.html">Shop</i></a></li>
+                <li><a href="Account.html">Account</a></li>
+             </ul>  
+        </div>
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+        <img src ="cover.jpg" id="main"><br>
+        <b>Car type:</b>
+        <button style="background-color: red;" onclick="document.getElementById('main').src='cover.jpg'">Ferrari</button>
+        <button style="background-color: gray; color:black;" onclick="document.getElementById('main').src='cover2.jpg'">Lamborghini</button>
+        <button style="background-color: black;" onclick="document.getElementById('main').src='cover3.jpg'">Bugatti</button>
+        <button style="background-color: rgb(0, 0, 123);" onclick="document.getElementById('main').src='cover4.jpg'">Porsche</button>
+        <button style="background-color: purple;" onclick="document.getElementById('main').src='cover5.jpg'">Pagani</button>
+        <button style="background-color: orange;" onclick="document.getElementById('main').src='cover6.jpg'">McLaren</button>
+            </div>
+          </div>
+        </div>
+        <div class = 'product-content'>
+          <h2 class = 'product-title'>Car Covers</h2>
+          
+          <div class = 'product-price'>
+            <p class = 'new-price'> Price: <span>$ 500</span></p>
+          </div>
+
+          <div class = 'product-detail'>
+            <h2>About Car Covers: </h2>
+            <p>A car cover protects against sun exposure. Sun exposure can cause damage to the interior and exterior of the vehicle.
+               You may notice that your paint, dash, or seats start to look faded from sun damage. A car cover can also protect 
+               against scratches and dings on your paint.</p>
+            <ul>
+                <form>
+            <li>Car: <select name="size">
+                <option value="fer">Ferrari LaFerrari</option>
+                <option value="lambo">Lamborghini Aventador SVJ</option>
+                <option value="bug">Bugatti Chiron Super Sport</option>
+                <option value="pors">Porsche 911 Turbo S</option>
+                <option value="pag">Pagani Zonda</option>
+                <option value="Mc">McLaren P1</option>
+           </select>
+            </li>
+            </ul>
+          </div>
+          <div class = 'purchase-info'>
+            <a href="Payment.html"><button type = 'button' class = 'btn'>
+              Buy Now
+                </button></a>
+          </div>
+                </form>
+        </div>
+      </div>
+    </div>
+      </div>
+  </body>
+</html>
